@@ -4,4 +4,4 @@ Get-ChildItem -Filter "*.jpg" -Recurse | Rename-Item -NewName {$_.LastWriteTime.
 
 // A script to append the date to the file name (MOV files)
 
-Get-ChildItem -Filter "*.mov" -Recurse | Rename-Item -NewName {$_.LastWriteTime.toString("yyyy-MM_") + $_.BaseName + ".mov" }
+Get-ChildItem -Filter "*.mov" -Recurse | Rename-Item -NewName {$_.LastWriteTime.toString("yyyy-MM_") + $_.BaseName + ".mov" } 
